@@ -1,0 +1,27 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  // float: left;
+  margin-right:8px;
+}
+

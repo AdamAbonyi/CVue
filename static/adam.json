@@ -1,0 +1,28 @@
+{
+    "name":"Adam Abonyi",
+    "birtday": "24th June 1984",
+    "address_street": "nám. Bořislavka 2028/3",
+    "address_city": "Prague",
+    "address_state": "Czech Republic",
+    "address_zip": "160 00",
+    "phone": "+420 604 150 046",
+    "email": "adam@abonyi.cz",
+    "website": "adam.abonyi.cz",
+
+    "sections": {
+        "about": {
+            "type": "text" ,
+            "text": "Lorem ipsum"
+        },
+        "education": {
+            "type": "timeline" ,
+            "entries": [
+                { 
+                    "date": "98-00",
+                    "title": "School Name",
+                    "subtitle": "Bla Blah Info"
+                }
+            ]
+        }
+    }
+}

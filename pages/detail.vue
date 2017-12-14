@@ -2,16 +2,15 @@
   <section class="container">
     <div>
       <!-- <logo/> -->
-      <h1 class="title">
-        Detail Page
+      <h1 class="title text-pop-up-top">
+        What will you do?
       </h1>
       <p>Some content here.. blah blah blah</p>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/detail/adam">Adam</router-link></li>
-        <li><router-link to="/detail/petr">Petr</router-link></li>
-      </ul>
-      
+      <nav class="cl-effect-15">
+        <router-link to="/" data-hover="Home" >Home</router-link>
+        <router-link to="/detail/adam" data-hover="Adam">Adam</router-link>
+        <router-link to="/detail/petr" data-hover="Petr">Petr</router-link>
+      </nav>
       
       <div>
         <nuxt-child></nuxt-child>
@@ -24,7 +23,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  transition: 'fade',
+  transition: 'blur',
   methods: {
   },
   created: function() {
@@ -36,32 +35,5 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

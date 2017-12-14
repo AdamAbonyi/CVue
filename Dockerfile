@@ -4,7 +4,7 @@ FROM node:8.8.1-alpine
 RUN mkdir -p /app
 
 ENV HOST 0.0.0.0
-EXPOSE 3000
+EXPOSE 8080
 
 
 # Install app dependencies

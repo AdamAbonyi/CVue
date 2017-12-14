@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  transition: 'fade',
+  transition: 'blur',
   methods: {
   },
   created: function() {

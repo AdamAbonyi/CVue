@@ -19,6 +19,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/router": "^1.0.1",
+    "install": "^0.10.2",
+    "npm": "^5.6.0",
     "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {

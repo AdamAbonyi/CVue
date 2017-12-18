@@ -7,10 +7,10 @@
       </h1>
       <p>Some content here.. blah blah blah</p>
       <nav class="cl-effect-15">
-        <router-link to="/" data-hover="Home" >Home</router-link>
-        <router-link to="/detail" data-hover="Detail" >Detail</router-link>
-        <router-link to="/detail/adam" data-hover="Adam">Adam</router-link>
-        <router-link to="/detail/petr" data-hover="Petr">Petr</router-link>
+        <nuxt-link  to="/" data-hover="Home" >Home</nuxt-link >
+        <nuxt-link  to="/detail" data-hover="Detail" >Detail</nuxt-link >
+        <nuxt-link  to="/detail/adam" data-hover="Adam">Adam</nuxt-link >
+        <nuxt-link  to="/detail/petr" data-hover="Petr">Petr</nuxt-link >
       </nav>
       
       <div>

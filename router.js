@@ -16,23 +16,27 @@ export function createRouter() {
         component: home
       },
       {
+        path: '/detail',
+        component: detail,
+        children: [{
+            path: '',
+            component: detailhome
+          },
+        //   { 
+        //     path: ':id',
+        //     component: detailid
+        //   }
+        ]
+      },
+      {
         path: '/detail/:id',
-        component: detailhome,
+        component: detail,
         children: [
-          // UserHome will be rendered inside User's <router-view>
-          // when /user/:id is matched
           {
             path: '',
             component: detailid
-          },
-
-          // ...other sub routes
+          }
         ]
-      },
-
-      {
-        path: '/detail',
-        component: detail
       }
     ]
   })

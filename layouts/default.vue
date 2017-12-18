@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -48,27 +48,33 @@ nav a:focus {
   outline: none;
 }
 
+$duration: 0.5s;
+$scale: 1.6;
+$color-to: rgba(0, 0, 0, 0.5);
+$color-from: rgb(230, 230, 230);
+
 /* Effect 15: scale down, reveal */
 .cl-effect-15 a {
-  color: rgba(0, 0, 0, 0.2);
+  color: $color-to;
+  -webkit-text-stroke: 1px black;
   font-weight: 700;
   text-shadow: none;
 }
 
 .cl-effect-15 a::before {
-  color: darkslategray;
+  color: $color-from;
   content: attr(data-hover);
   position: absolute;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition: -webkit-transform $duration, opacity $duration;
+  -moz-transition: -moz-transform $duration, opacity $duration;
+  transition: transform $duration, opacity $duration;
 }
 
 .cl-effect-15 a:hover::before,
 .cl-effect-15 a:focus::before {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  transform: scale($scale);
   opacity: 0;
 }
 </style>

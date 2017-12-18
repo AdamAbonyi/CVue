@@ -1,7 +1,6 @@
 <template>
     <div>
         No Param
-      </div>
     </div>
 </template>
 

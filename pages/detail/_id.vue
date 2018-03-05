@@ -20,7 +20,7 @@ export default {
       .then(response => {
         return { source: response.data  }
       })
-      .catch(reason => console.log(e))
+      .catch(reason => console.log(reason))
   },
   methods: {
 

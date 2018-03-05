@@ -3,9 +3,10 @@ FROM node:8.8.1-alpine
 # Create app directory
 RUN mkdir -p /app
 
+ENV NODE_ENV=production
 ENV HOST 0.0.0.0
-EXPOSE 8080
 
+EXPOSE 8080
 
 # Install app dependencies
 #RUN apk update && apk upgrade && apk add git

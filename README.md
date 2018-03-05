@@ -20,3 +20,14 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Docker 
+
+``` bash
+# Build docker image
+docker build -t xenik.azurecr.io/test .
+
+# Push Image
+docker push xenik.azurecr.io/test
+
+

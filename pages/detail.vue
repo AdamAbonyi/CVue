@@ -12,7 +12,7 @@
         <nuxt-link  to="/detail/adam" data-hover="Adam">Adam</nuxt-link >
         <nuxt-link  to="/detail/petr" data-hover="Petr">Petr</nuxt-link >
       </nav>
-      
+
       <div>
         <nuxt-child></nuxt-child>
       </div>
@@ -22,6 +22,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+
 
 export default {
   transition: 'blur',

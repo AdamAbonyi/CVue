@@ -1,17 +1,35 @@
 <template>
   <div>
-      Tralala {{ $route.params.id }}
+      <CV :data="source"></CV>
   </div>
 </template>
 
 <script>
+import CV from "~/components/CV.vue";
+import axios from 'axios';
+
 export default {
-  transition: 'blur',
+  transition: "blur",
+  data() {
+    return {
+      source: "test"
+    }
+  },
+  asyncData(context) {
+    return axios.get(`/${context.route.params.id}.json`)
+      .then(response => {
+        return { source: response.data  }
+      })
+      .catch(reason => console.log(e))
+  },
   methods: {
+
   },
-  created: function() {
+  created() {
   },
-}
+  components: {
+  }
+};
 </script>
 
 <style lang="scss">

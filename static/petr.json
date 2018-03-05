@@ -1,0 +1,27 @@
+{
+  "layout": 2,
+  "name": "Petr Petr",
+  "address_street": "někde v tahu 123/321",
+  "address_city": "Prague",
+  "address_state": "Czech Republic",
+  "address_zip": "160 00",
+  "phone": "+420 XXX ZZZ YYY",
+  "email": "petr@petr.cz",
+  "website": "petr.petr.cz",
+  "sections": {
+    "about": {
+      "type": "text",
+      "text": "Lorem ipsum"
+    },
+    "education": {
+      "type": "timeline",
+      "entries": [
+        {
+          "date": "98-00",
+          "title": "School Name",
+          "subtitle": "Bla Blah Info"
+        }
+      ]
+    }
+  }
+}

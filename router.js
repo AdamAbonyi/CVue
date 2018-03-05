@@ -22,7 +22,7 @@ export function createRouter() {
             path: '',
             component: detailhome
           },
-        //   { 
+        //   {
         //     path: ':id',
         //     component: detailid
         //   }
